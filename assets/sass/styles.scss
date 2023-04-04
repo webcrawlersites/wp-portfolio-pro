@@ -1,0 +1,46 @@
+.wpppro_portfolio_container {
+    max-width: 90%;
+    margin: 0 auto;
+    display: grid;
+
+    .wpppro_item_container {
+        position: relative;
+
+        img {
+            object-fit: cover;
+            height: auto;
+            display: block;
+        }
+
+      a {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        z-index: 99;
+        transition: all 0.2s;
+      }
+
+      .title-container {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        z-index: 50;
+        transition: all 0.2s;
+        opacity: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+      }
+
+       &:hover {
+        .title-container {
+          opacity: 1;
+        }
+       } 
+    }
+  }
